@@ -1,0 +1,446 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>ImagesSources\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <OutputPath>..\RocketFetcherBin\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\RocketFetcherBin\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ImagesSources\sources\anthennas\**" />
+    <Compile Remove="ImagesSources\sources\boddies\**" />
+    <Compile Remove="ImagesSources\sources\type\**" />
+    <Compile Remove="Tests\**" />
+    <EmbeddedResource Remove="ImagesSources\sources\anthennas\**" />
+    <EmbeddedResource Remove="ImagesSources\sources\boddies\**" />
+    <EmbeddedResource Remove="ImagesSources\sources\type\**" />
+    <EmbeddedResource Remove="Tests\**" />
+    <None Remove="ImagesSources\sources\anthennas\**" />
+    <None Remove="ImagesSources\sources\boddies\**" />
+    <None Remove="ImagesSources\sources\type\**" />
+    <None Remove="Tests\**" />
+    <Page Remove="ImagesSources\sources\anthennas\**" />
+    <Page Remove="ImagesSources\sources\boddies\**" />
+    <Page Remove="ImagesSources\sources\type\**" />
+    <Page Remove="Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ImagesSources\AllWindows\account.png" />
+    <None Remove="ImagesSources\AllWindows\back.png" />
+    <None Remove="ImagesSources\AllWindows\background-rl.png" />
+    <None Remove="ImagesSources\AllWindows\background.png" />
+    <None Remove="ImagesSources\AllWindows\background_grey_1.jpg" />
+    <None Remove="ImagesSources\AllWindows\back_white.png" />
+    <None Remove="ImagesSources\AllWindows\content.png" />
+    <None Remove="ImagesSources\AllWindows\cross.png" />
+    <None Remove="ImagesSources\AllWindows\go.png" />
+    <None Remove="ImagesSources\AllWindows\go_white.png" />
+    <None Remove="ImagesSources\AllWindows\icone_profile.png" />
+    <None Remove="ImagesSources\AllWindows\import.png" />
+    <None Remove="ImagesSources\AllWindows\logo.ico" />
+    <None Remove="ImagesSources\AllWindows\logo.png" />
+    <None Remove="ImagesSources\AllWindows\plus.png" />
+    <None Remove="ImagesSources\AllWindows\plus_white.png" />
+    <None Remove="ImagesSources\AllWindows\pub_chevaldonne.png" />
+    <None Remove="ImagesSources\AllWindows\redstar.png" />
+    <None Remove="ImagesSources\AllWindows\rl_gris.jpg" />
+    <None Remove="ImagesSources\AllWindows\save.png" />
+    <None Remove="ImagesSources\AllWindows\share.png" />
+    <None Remove="ImagesSources\icone_profile.png" />
+    <None Remove="ImagesSources\logo.ico" />
+    <None Remove="ImagesSources\sources\antennas\cuckoo_clock.png" />
+    <None Remove="ImagesSources\sources\antennas\giant_panda.png" />
+    <None Remove="ImagesSources\sources\antennas\gold_nugget.png" />
+    <None Remove="ImagesSources\sources\antennas\mage_glass_ii.png" />
+    <None Remove="ImagesSources\sources\antennas\rubber_duckie.png" />
+    <None Remove="ImagesSources\sources\banners\bobs_ramen.png" />
+    <None Remove="ImagesSources\sources\banners\faboo.png" />
+    <None Remove="ImagesSources\sources\banners\neoctane.png" />
+    <None Remove="ImagesSources\sources\banners\rl_esports.png" />
+    <None Remove="ImagesSources\sources\banners\tranquil_toff.png" />
+    <None Remove="ImagesSources\sources\bodies\komodo.png" />
+    <None Remove="ImagesSources\sources\bodies\octane.png" />
+    <None Remove="ImagesSources\sources\bodies\octane_zsr.png" />
+    <None Remove="ImagesSources\sources\bodies\samurai.png" />
+    <None Remove="ImagesSources\sources\bodies\takumi.png" />
+    <None Remove="ImagesSources\sources\boosts\battle_stars.png" />
+    <None Remove="ImagesSources\sources\boosts\hearts_boost.png" />
+    <None Remove="ImagesSources\sources\boosts\lightning.png" />
+    <None Remove="ImagesSources\sources\boosts\quasar.png" />
+    <None Remove="ImagesSources\sources\boosts\virtual_wave.png" />
+    <None Remove="ImagesSources\sources\categ\antennas.png" />
+    <None Remove="ImagesSources\sources\categ\anthennas.png" />
+    <None Remove="ImagesSources\sources\categ\banner.png.png" />
+    <None Remove="ImagesSources\sources\categ\banners.png" />
+    <None Remove="ImagesSources\sources\categ\boosts.png" />
+    <None Remove="ImagesSources\sources\categ\decals.png" />
+    <None Remove="ImagesSources\sources\categ\explosions.png" />
+    <None Remove="ImagesSources\sources\categ\infinite.png" />
+    <None Remove="ImagesSources\sources\categ\infinite_white.png" />
+    <None Remove="ImagesSources\sources\categ\paints.png" />
+    <None Remove="ImagesSources\sources\categ\toppers.png" />
+    <None Remove="ImagesSources\sources\categ\trails.png" />
+    <None Remove="ImagesSources\sources\categ\wheels.png" />
+    <None Remove="ImagesSources\sources\decals\dominus_nightmare_fuel.png" />
+    <None Remove="ImagesSources\sources\decals\endo_mg.png" />
+    <None Remove="ImagesSources\sources\decals\fire_god.png" />
+    <None Remove="ImagesSources\sources\decals\octane_distortion.png" />
+    <None Remove="ImagesSources\sources\decals\wet_paint.png" />
+    <None Remove="ImagesSources\sources\explosions\buffy_sugo.png" />
+    <None Remove="ImagesSources\sources\explosions\butterflies.png" />
+    <None Remove="ImagesSources\sources\explosions\reaper.png" />
+    <None Remove="ImagesSources\sources\explosions\singularity.png" />
+    <None Remove="ImagesSources\sources\explosions\supernova_iii.png" />
+    <None Remove="ImagesSources\sources\paints\furry.png" />
+    <None Remove="ImagesSources\sources\paints\metallic_flake.png" />
+    <None Remove="ImagesSources\sources\paints\moon_rock.png" />
+    <None Remove="ImagesSources\sources\paints\straight_line.png" />
+    <None Remove="ImagesSources\sources\paints\toon_wood.png" />
+    <None Remove="ImagesSources\sources\rarity\black_market.png" />
+    <None Remove="ImagesSources\sources\rarity\common.png" />
+    <None Remove="ImagesSources\sources\rarity\exotic.png" />
+    <None Remove="ImagesSources\sources\rarity\import.png" />
+    <None Remove="ImagesSources\sources\rarity\legacy.png" />
+    <None Remove="ImagesSources\sources\rarity\limited.png" />
+    <None Remove="ImagesSources\sources\rarity\prenium.png" />
+    <None Remove="ImagesSources\sources\rarity\rare.png" />
+    <None Remove="ImagesSources\sources\rarity\uncommon.png" />
+    <None Remove="ImagesSources\sources\rarity\very_rare.png" />
+    <None Remove="ImagesSources\sources\toppers\fruit_hat.png" />
+    <None Remove="ImagesSources\sources\toppers\happy_new_year.png" />
+    <None Remove="ImagesSources\sources\toppers\octopus.png" />
+    <None Remove="ImagesSources\sources\toppers\robo_visor.png" />
+    <None Remove="ImagesSources\sources\toppers\wildcat_ears.png" />
+    <None Remove="ImagesSources\sources\trails\friction.png" />
+    <None Remove="ImagesSources\sources\trails\laser_wave_iii.saffron.png" />
+    <None Remove="ImagesSources\sources\trails\laser_wave_iii.white.png" />
+    <None Remove="ImagesSources\sources\trails\lightspeed.png" />
+    <None Remove="ImagesSources\sources\trails\luminous.png" />
+    <None Remove="ImagesSources\sources\wheels\ripper.png" />
+    <None Remove="ImagesSources\sources\wheels\stern.uncommon.png" />
+    <None Remove="ImagesSources\sources\wheels\stern.very_rare.png" />
+    <None Remove="ImagesSources\sources\wheels\stern_uncommon.png" />
+    <None Remove="ImagesSources\sources\wheels\x_tempo_radiant.png" />
+    <None Remove="ImagesSources\sources\wheels\zomba.png" />
+    <None Remove="ImagesSources\testPP\cassiopeia.png" />
+    <None Remove="ImagesSources\testPP\icone_profile.png" />
+    <None Remove="ImagesSources\testPP\licorne.png" />
+    <None Remove="ImagesSources\testPP\weeb.jpg" />
+    <None Remove="ImagesSources\testPP\wtc.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ImagesSources\AllWindows\account.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\background_grey_1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\content.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\cross.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\go.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\import.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\logo.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\plus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\plus_white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\pub_chevaldonne.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\redstar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\save.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\share.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\icone_profile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\logo.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\antennas\cuckoo_clock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\antennas\giant_panda.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\antennas\gold_nugget.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\antennas\mage_glass_ii.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\antennas\rubber_duckie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\banners\bobs_ramen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\banners\faboo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\banners\neoctane.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\banners\rl_esports.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\banners\tranquil_toff.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\bodies\komodo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\bodies\octane.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\bodies\octane_zsr.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\bodies\samurai.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\bodies\takumi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\boosts\battle_stars.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\boosts\hearts_boost.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\boosts\lightning.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\boosts\quasar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\boosts\virtual_wave.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\antennas.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\banners.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\boddies.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ImagesSources\AllWindows\background-rl.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\back_white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\AllWindows\go_white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\boosts.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\decals.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\explosions.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\infinite_white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\paints.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\toppers.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\trails.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\categ\wheels.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\decals\dominus_nightmare_fuel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\decals\endo_mg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\decals\fire_god.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\decals\octane_distortion.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\decals\wet_paint.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\explosions\buffy_sugo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\explosions\butterflies.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\explosions\reaper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\explosions\singularity.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\explosions\supernova_iii.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\paints\metallic_flake.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\paints\moon_rock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\paints\straight_line.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\rarity\black_market.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\rarity\common.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\rarity\exotic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\rarity\import.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\rarity\legacy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\rarity\limited.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\rarity\prenium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\rarity\rare.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\rarity\uncommon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\rarity\very_rare.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\toppers\fruit_hat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\toppers\happy_new_year.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\toppers\octopus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\toppers\robo_visor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\toppers\wildcat_ears.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\trails\friction.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\trails\laser_wave_iii.saffron.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\trails\laser_wave_iii.white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\trails\lightspeed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\trails\luminous.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\wheels\ripper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\wheels\stern.very_rare.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\wheels\x_tempo_radiant.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\wheels\zomba.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\testPP\licorne.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataContractPersistance\DataContractPersistance.csproj" />
+    <ProjectReference Include="..\Modèle\Modèle.csproj" />
+    <ProjectReference Include="..\StubLib\StubLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ImagesSources\sources\paints\furry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagesSources\sources\paints\toon_wood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="ImagesSources\sources\wheels\stern.uncommon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="ImagesSources\testPP\cassiopeia.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="ImagesSources\testPP\icone_profile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="ImagesSources\testPP\weeb.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="ImagesSources\testPP\wtc.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

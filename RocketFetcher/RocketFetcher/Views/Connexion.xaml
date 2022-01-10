@@ -1,0 +1,131 @@
+﻿<UserControl x:Class="RocketFetcher.Views.Connexion"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RocketFetcher.Views"
+      mc:Ignorable="d" 
+      d:DesignWidth="1920" d:DesignHeight="1080">
+
+    <Grid>
+        <Viewbox Stretch="UniformToFill" HorizontalAlignment="Center">
+            <Image Source="/ImagesSources/AllWindows/background-rl.png"/>
+        </Viewbox>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="2.5*"/>
+                <RowDefinition Height="0.8*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" 
+                       VerticalAlignment="Center" TextAlignment="Center" 
+                       Text="RocketFetcher" FontSize="50" FontFamily="Arial" 
+                       Foreground="{StaticResource couleurTitre}"/>
+
+            <Rectangle Grid.Row="1" Grid.RowSpan="5" 
+                       Fill="Black" Opacity="0.4"
+                       Width="260"/>
+
+            <Rectangle Grid.Row="6"
+                       Fill="Black" Opacity="0.4"
+                       Width="260" Margin="10"/>
+
+            <DockPanel Grid.Row="1" 
+                       HorizontalAlignment="Center">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="105"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="105"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="1"
+                               Style="{StaticResource textBlockBasique}" 
+                               HorizontalAlignment="Left"
+                               Text="Login:"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" 
+                             Width="240" Height="35" 
+                             FontSize="22"
+                             x:Name="textBoxLogin"/>
+
+                    <TextBlock Grid.Column="1" Grid.Row="2"
+                               Style="{StaticResource textBlockBasique}" 
+                               HorizontalAlignment="Left"
+                               Text="Password:"/>
+                    <PasswordBox Grid.Column="1" Grid.Row="3" 
+                                 Width="240" Height="35" 
+                                 FontSize="22"
+                                 x:Name="BoxPassword"/>
+
+                    <Border Grid.Row="1" Grid.RowSpan="3" Grid.Column="3" 
+                            Height="auto"
+                            Margin="15,0">
+
+                        <Button Click="Logining"
+                                Background="Transparent"
+                                BorderBrush="Transparent"
+                                Style="{StaticResource noBC}">
+                            <Button.Content>
+                                <Image Source="/ImagesSources/AllWindows/go_white.png"/>
+                            </Button.Content>
+                        </Button>
+                    </Border>
+                </Grid>
+            </DockPanel>
+
+            <WrapPanel Grid.Row="2" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center">
+                <CheckBox Click="Remember_Me"
+                          x:Name="Remember_Case"
+                          Margin="0,2,10,0"
+                          BorderBrush="white" BorderThickness="3"/>
+
+                <TextBlock Style="{StaticResource textBlockBasique}"
+                           FontSize="16"
+                           Height="35" Text="Remember Me"/>
+            </WrapPanel>
+
+            <Button Grid.Row="3"
+                    Click="Forgot_Password"
+                    VerticalAlignment="Center"
+                    Style="{StaticResource noBC}" 
+                    HorizontalAlignment="Center"
+                    Foreground="DarkBlue" Content="Forgot Password ?"/>
+
+            <Button Grid.Row="4" 
+                    Click="Create_an_account"
+                    Style="{StaticResource noBC}" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Content="Create an Account"/>
+
+            <Button Grid.Row="5" 
+                    Click="Guest_Mode"
+                    Style="{StaticResource noBC}" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Content=" Guest Mode"/>
+
+            <TextBlock Grid.Row="6"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Foreground="DarkSalmon" FontSize="20"
+                       x:Name="errorMessage"/>
+        </Grid>
+    </Grid>
+</UserControl>

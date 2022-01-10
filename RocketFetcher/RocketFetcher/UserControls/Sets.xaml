@@ -1,0 +1,108 @@
+﻿<UserControl x:Class="RocketFetcher.UserControls.Sets"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RocketFetcher.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="Back2Menu" 
+                Click="Back2Menu_Click"
+                HorizontalAlignment="Left" Margin="10,10,0,0"
+                Background="Transparent" BorderBrush="Transparent"
+                Style="{StaticResource noBC}">
+            <WrapPanel>
+                <Image Source="../ImagesSources/AllWindows/back_white.png"
+                       Margin="10,5,0,5"/>
+                <TextBlock Style="{StaticResource BasiquePlus}"
+                           Margin="10"
+                           Text="Back to Fetcher"/>
+            </WrapPanel>
+        </Button>
+
+        <Border Grid.Row="1" 
+                Margin="10" 
+                BorderBrush="White" BorderThickness="2"/>
+
+        <Grid Grid.Row="1"
+              Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border Margin="15" 
+                    BorderBrush="White" BorderThickness="2"/>
+
+            <Grid Margin="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <ListBox Background="Transparent"
+                         ItemsSource="{Binding SelectedAccount.Sets}"
+                         SelectionChanged="Set_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}" 
+                                       Style="{StaticResource textBlockBasique}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+                <Border Grid.Row="1"
+                        BorderBrush="White" BorderThickness="2"/>
+                
+                <WrapPanel Grid.Row="1" 
+                           HorizontalAlignment="Center">
+                    <Button Click="NewSet"
+                            Margin="10" 
+                            Background="Transparent" BorderBrush="Transparent"
+                            Style="{StaticResource noBC}">
+                        <WrapPanel Margin="10">
+                            <Image Source="../ImagesSources/AllWindows/plus_white.png"/>
+                            <TextBlock Style="{StaticResource BasiquePlus}"
+                                       Margin="15,0"
+                                       Text="Save active Set"/>
+                        </WrapPanel>
+                    </Button>
+                </WrapPanel>
+
+                <StackPanel Grid.Row="2">
+                    <TextBlock Style="{StaticResource textBlockBasique}"
+                               Text="Set name:"
+                               Margin="0,10,0,0"/>
+                    <TextBox Style="{StaticResource textBoxChampTexte}"
+                             x:Name="SetName"
+                             Margin="15"/>
+                </StackPanel>
+            </Grid>
+            
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Style="{StaticResource textBlockBasique}" 
+                           HorizontalAlignment="Left" VerticalAlignment="Center"
+                           Margin="25,0"
+                           Text="{Binding SelectedSet.Name}"/>
+
+                <ContentControl Grid.Row="1"
+                                x:Name="itemSet" 
+                                Margin="10">
+                    <local:CurrentSet DataContext="{Binding SelectedSet.SetItems}"/>
+                </ContentControl>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

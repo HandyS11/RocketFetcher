@@ -1,0 +1,18 @@
+﻿<Window x:Class="RocketFetcher.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RocketFetcher.Views"
+        mc:Ignorable="d"
+        d:DesignWidth="1920" d:DesignHeight="1080"
+        Title="RocketFetcher" Icon="/ImagesSources/logo.ico"
+        MinWidth="1080" MinHeight="720" 
+        MaxWidth="2560" MaxHeight="1920">
+        <!--Convient parfaitement de la 720p au 2k, à l'horizontal comme en vertical !-->
+    
+    <!--L'application est principalement géré depuis la page : PagePrincipale.xaml-->
+    <ContentControl x:Name="mainPart">
+        <local:Connexion/>
+    </ContentControl>
+</Window>

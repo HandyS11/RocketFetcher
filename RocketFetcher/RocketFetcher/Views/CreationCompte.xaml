@@ -1,0 +1,159 @@
+﻿<UserControl x:Class="RocketFetcher.Views.CreationCompte"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RocketFetcher.Views"
+      mc:Ignorable="d"
+      d:DesignWidth="1920" d:DesignHeight="1080">
+
+    <Grid>
+        <Viewbox Stretch="UniformToFill" HorizontalAlignment="Center">
+            <Image Source="/ImagesSources/AllWindows/background-rl.png"/>
+        </Viewbox>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1.1*"/>
+                <RowDefinition Height="1.1*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="0.8*"/>
+                <RowDefinition Height="1.5*"/>
+            </Grid.RowDefinitions>
+
+
+            <Rectangle Grid.Row="2" 
+                       Grid.RowSpan="6" 
+                       HorizontalAlignment="Right"
+                       Fill="Black" Opacity="0.4"
+                       Margin="8"
+                       Width="150"/>
+
+            <Rectangle Grid.Row="8" Grid.ColumnSpan="2"
+                       Fill="Black" Opacity="0.4"
+                       Width="300" Margin="5"/>
+
+            <Viewbox Grid.Row="0" Grid.RowSpan="2"
+                     Width="120" Height="120" >
+                <Button Click="Back"
+                        Grid.RowSpan="2"
+                        Style="{StaticResource noBC}">
+                    <Button.Content>
+                        <Image Source="/ImagesSources/AllWindows/back_white.png"/>
+                    </Button.Content>
+                </Button>
+            </Viewbox>
+
+            <TextBlock Grid.ColumnSpan="3" 
+                       Style="{StaticResource textBlockBasique}"
+                       Foreground="{StaticResource couleurTitre}"
+                       TextAlignment="Center" Width="500" FontSize="50" 
+                       Text="RocketFetcher" FontFamily="Arial"/>
+
+            <TextBlock Grid.Row="1" Grid.ColumnSpan="3" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
+                       Width="300" FontSize="32"
+                       Foreground="White" Text="Create an Account :"/>
+
+            <TextBlock Grid.Row="2" Grid.RowSpan="2" 
+                       Style="{StaticResource textBlockDroite}" 
+                       Text=" Picture :" />
+
+            <Border Grid.Row="2" Grid.Column="1" Grid.RowSpan="2"
+                    HorizontalAlignment="Left" VerticalAlignment="Center"
+                    Width="125" Height="125" 
+                    BorderBrush="White" BorderThickness="2">
+
+                <Button x:Name="OpenFile"
+                        Background="Transparent" BorderBrush="Transparent" 
+                        Click="OuvrirImage">
+                    <Button.Content>
+                        <Image Name="img"/>
+                    </Button.Content>
+                </Button>
+            </Border>
+
+            <TextBlock Grid.Row="4" 
+                       Style="{StaticResource textBlockDroite}" 
+                       Text=" Email :"/>
+            <TextBox Grid.Row="4" Grid.Column="1"
+                     Style="{StaticResource textBoxChampTexte}"
+                     x:Name="textBoxMail"/>
+
+            <TextBlock Grid.Row="5" 
+                       Style="{StaticResource textBlockDroite}" 
+                       Text=" Login :"/>
+            <TextBox Grid.Row="5" Grid.Column="1" 
+                     Style="{StaticResource textBoxChampTexte}"
+                     x:Name="textBoxLogin"/>
+
+            <TextBlock Grid.Row="6" 
+                       Style="{StaticResource textBlockDroite}" 
+                       Text=" Password :"/>
+
+            <TextBlock Grid.Row="7" 
+                       Style="{StaticResource textBlockDroite}" 
+                       Text=" Re-Password :"/>
+
+            <DockPanel Grid.Row="6" Grid.Column="1" Grid.RowSpan="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <PasswordBox Grid.Row="0" 
+                             Style="{StaticResource StylePassword}"
+                             x:Name="BoxPassword"/>
+                    <PasswordBox Grid.Row="1" 
+                             Style="{StaticResource StylePassword}"
+                             x:Name="BoxPassword2"/>
+                </Grid>
+
+                <Viewbox Margin="20,5" 
+                         Width="100" 
+                         HorizontalAlignment="Left">
+                    <Button Click="Log" 
+                            Style="{StaticResource noBC}">
+                        <Button.Content>
+                            <Image Source="/ImagesSources/AllWindows/go_white.png"/>
+                        </Button.Content>
+                    </Button>
+                </Viewbox>
+            </DockPanel>
+
+            <TextBlock Grid.Row="8" Grid.ColumnSpan="2"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Foreground="DarkSalmon" FontSize="20"
+                       x:Name="errorMessage"/>
+
+            <!--EXTREMEMENT MOCHE !!-->
+            <Image Grid.Row="4" Grid.Column="1" 
+                   HorizontalAlignment="Left" Margin="320,0,0,0"
+                   Height="25"
+                   Source="/ImagesSources/AllWindows/redstar.png"/>
+            <Image Grid.Row="5" Grid.Column="1" 
+                   HorizontalAlignment="Left" Margin="320,0,0,0"
+                   Height="25"
+                   Source="/ImagesSources/AllWindows/redstar.png"/>
+            <Image Grid.Row="6" Grid.Column="1" 
+                   HorizontalAlignment="Left" Margin="320,0,0,0"
+                   Height="25"
+                   Source="/ImagesSources/AllWindows/redstar.png"/>
+            <Image Grid.Row="7" Grid.Column="1" 
+                   HorizontalAlignment="Left" Margin="320,0,0,0"
+                   Height="25"
+                   Source="/ImagesSources/AllWindows/redstar.png"/>
+        </Grid>
+    </Grid>
+</UserControl>

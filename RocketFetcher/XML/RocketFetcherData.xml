@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataToPersist xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/DataContractPersistance">
+  <comptes xmlns:d2p1="http://schemas.datacontract.org/2004/07/Mod%C3%A8le" z:Id="2" z:Size="5">
+    <d2p1:Compte z:Id="3">
+      <d2p1:login z:Id="4">Guest</d2p1:login>
+      <d2p1:email z:Id="5"></d2p1:email>
+      <d2p1:image z:Id="6">../ImagesSources/testPP/icone_profile.png</d2p1:image>
+      <d2p1:password z:Ref="5" i:nil="true" />
+      <d2p1:sets z:Id="7" z:Size="1">
+        <d2p1:Set z:Id="8">
+          <d2p1:Name z:Id="9">Guest Set</d2p1:Name>
+          <d2p1:NumSet>0</d2p1:NumSet>
+          <d2p1:setItems xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="10" z:Size="0" />
+        </d2p1:Set>
+      </d2p1:sets>
+    </d2p1:Compte>
+    <d2p1:Compte z:Id="11">
+      <d2p1:login z:Id="12">Login</d2p1:login>
+      <d2p1:email z:Id="13">Login@gmail.com</d2p1:email>
+      <d2p1:image z:Id="14">../ImagesSources/testPP/weeb.jpg</d2p1:image>
+      <d2p1:password z:Id="15">azerty</d2p1:password>
+      <d2p1:sets z:Id="16" z:Size="2">
+        <d2p1:Set z:Id="17">
+          <d2p1:Name z:Id="18">Le Premier Set</d2p1:Name>
+          <d2p1:NumSet>0</d2p1:NumSet>
+          <d2p1:setItems xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="19" z:Size="2">
+            <d6p1:KeyValueOfItemintLL8q1uDj>
+              <d6p1:Key z:Id="20">
+                <d2p1:Certification z:Id="21">Juggler</d2p1:Certification>
+                <d2p1:Color z:Id="22">Burnt_Sienna</d2p1:Color>
+                <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+                <d2p1:ImagePath z:Id="23">../ImagesSources/sources/wheels/x_tempo_radiant.png</d2p1:ImagePath>
+                <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+                <d2p1:IsPaintable>true</d2p1:IsPaintable>
+                <d2p1:Name z:Id="24">X-Tempo: Radiant</d2p1:Name>
+                <d2p1:Price>450</d2p1:Price>
+                <d2p1:Rarity z:Id="25">Import</d2p1:Rarity>
+                <d2p1:ReleaseDate>2021-02-23T00:00:00</d2p1:ReleaseDate>
+                <d2p1:Serie z:Id="26">Season 2</d2p1:Serie>
+                <d2p1:Type z:Id="27">Wheels</d2p1:Type>
+              </d6p1:Key>
+              <d6p1:Value>0</d6p1:Value>
+            </d6p1:KeyValueOfItemintLL8q1uDj>
+            <d6p1:KeyValueOfItemintLL8q1uDj>
+              <d6p1:Key z:Id="28">
+                <d2p1:Certification z:Id="29">Playmaker</d2p1:Certification>
+                <d2p1:Color z:Id="30">none</d2p1:Color>
+                <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+                <d2p1:ImagePath z:Id="31">../ImagesSources/sources/trails/friction.png</d2p1:ImagePath>
+                <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+                <d2p1:IsPaintable>false</d2p1:IsPaintable>
+                <d2p1:Name z:Id="32">Friction</d2p1:Name>
+                <d2p1:Price>50</d2p1:Price>
+                <d2p1:Rarity z:Id="33">Very_Rare</d2p1:Rarity>
+                <d2p1:ReleaseDate>2017-07-05T00:00:00</d2p1:ReleaseDate>
+                <d2p1:Serie z:Id="34">Overdrive, Golden Gift/Latern</d2p1:Serie>
+                <d2p1:Type z:Id="35">Trails</d2p1:Type>
+              </d6p1:Key>
+              <d6p1:Value>0</d6p1:Value>
+            </d6p1:KeyValueOfItemintLL8q1uDj>
+          </d2p1:setItems>
+        </d2p1:Set>
+        <d2p1:Set z:Id="36">
+          <d2p1:Name z:Id="37">Et pourquoi pas ?</d2p1:Name>
+          <d2p1:NumSet>0</d2p1:NumSet>
+          <d2p1:setItems xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="38" z:Size="2">
+            <d6p1:KeyValueOfItemintLL8q1uDj>
+              <d6p1:Key z:Id="39">
+                <d2p1:Certification z:Id="40">Tactician</d2p1:Certification>
+                <d2p1:Color z:Ref="30" i:nil="true" />
+                <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+                <d2p1:ImagePath z:Id="41">../ImagesSources/sources/wheels/ripper.png</d2p1:ImagePath>
+                <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+                <d2p1:IsPaintable>false</d2p1:IsPaintable>
+                <d2p1:Name z:Id="42">Ripper</d2p1:Name>
+                <d2p1:Price>15</d2p1:Price>
+                <d2p1:Rarity z:Id="43">Rare</d2p1:Rarity>
+                <d2p1:ReleaseDate>2020-09-23T00:00:00</d2p1:ReleaseDate>
+                <d2p1:Serie z:Id="44">FTP</d2p1:Serie>
+                <d2p1:Type z:Ref="27" i:nil="true" />
+              </d6p1:Key>
+              <d6p1:Value>0</d6p1:Value>
+            </d6p1:KeyValueOfItemintLL8q1uDj>
+            <d6p1:KeyValueOfItemintLL8q1uDj>
+              <d6p1:Key z:Id="45">
+                <d2p1:Certification z:Id="46">Turtle</d2p1:Certification>
+                <d2p1:Color z:Id="47">Saffron</d2p1:Color>
+                <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+                <d2p1:ImagePath z:Id="48">../ImagesSources/sources/trails/laser_wave_iii.saffron.png</d2p1:ImagePath>
+                <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+                <d2p1:IsPaintable>true</d2p1:IsPaintable>
+                <d2p1:Name z:Id="49">Laser Wave III</d2p1:Name>
+                <d2p1:Price>125</d2p1:Price>
+                <d2p1:Rarity z:Id="50">Limited</d2p1:Rarity>
+                <d2p1:ReleaseDate>2018-09-05T00:00:00</d2p1:ReleaseDate>
+                <d2p1:Serie z:Id="51">Rocketpass 1</d2p1:Serie>
+                <d2p1:Type z:Ref="35" i:nil="true" />
+              </d6p1:Key>
+              <d6p1:Value>0</d6p1:Value>
+            </d6p1:KeyValueOfItemintLL8q1uDj>
+          </d2p1:setItems>
+        </d2p1:Set>
+      </d2p1:sets>
+    </d2p1:Compte>
+    <d2p1:Compte z:Id="52">
+      <d2p1:login z:Id="53">HandyS11</d2p1:login>
+      <d2p1:email z:Id="54">handys11@gmail.com</d2p1:email>
+      <d2p1:image z:Id="55">../ImagesSources/testPP/cassiopeia.png</d2p1:image>
+      <d2p1:password z:Ref="15" i:nil="true" />
+      <d2p1:sets z:Id="56" z:Size="3">
+        <d2p1:Set z:Ref="17" i:nil="true" />
+        <d2p1:Set z:Id="57">
+          <d2p1:Name z:Id="58">Le blanc c'est beau !</d2p1:Name>
+          <d2p1:NumSet>0</d2p1:NumSet>
+          <d2p1:setItems xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="59" z:Size="4">
+            <d6p1:KeyValueOfItemintLL8q1uDj>
+              <d6p1:Key z:Id="60">
+                <d2p1:Certification z:Id="61">none</d2p1:Certification>
+                <d2p1:Color z:Id="62">Titanium_White</d2p1:Color>
+                <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+                <d2p1:ImagePath z:Id="63">../ImagesSources/sources/banners/bobs_ramen.png</d2p1:ImagePath>
+                <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+                <d2p1:IsPaintable>true</d2p1:IsPaintable>
+                <d2p1:Name z:Id="64">Bob's Ramen</d2p1:Name>
+                <d2p1:Price>350</d2p1:Price>
+                <d2p1:Rarity z:Ref="33" i:nil="true" />
+                <d2p1:ReleaseDate>2018-10-08T00:00:00</d2p1:ReleaseDate>
+                <d2p1:Serie z:Id="65">Elevation, Golden Egg/Pumpkin/Gift</d2p1:Serie>
+                <d2p1:Type z:Id="66">Banners</d2p1:Type>
+              </d6p1:Key>
+              <d6p1:Value>0</d6p1:Value>
+            </d6p1:KeyValueOfItemintLL8q1uDj>
+            <d6p1:KeyValueOfItemintLL8q1uDj>
+              <d6p1:Key z:Id="67">
+                <d2p1:Certification z:Id="68">Scorer</d2p1:Certification>
+                <d2p1:Color z:Ref="62" i:nil="true" />
+                <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+                <d2p1:ImagePath z:Id="69">../ImagesSources/sources/bodies/octane.png</d2p1:ImagePath>
+                <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+                <d2p1:IsPaintable>true</d2p1:IsPaintable>
+                <d2p1:Name z:Id="70">Octane</d2p1:Name>
+                <d2p1:Price>14250</d2p1:Price>
+                <d2p1:Rarity z:Ref="25" i:nil="true" />
+                <d2p1:ReleaseDate>2017-08-03T00:00:00</d2p1:ReleaseDate>
+                <d2p1:Serie z:Id="71">Tradeup</d2p1:Serie>
+                <d2p1:Type z:Id="72">Bodies</d2p1:Type>
+              </d6p1:Key>
+              <d6p1:Value>0</d6p1:Value>
+            </d6p1:KeyValueOfItemintLL8q1uDj>
+            <d6p1:KeyValueOfItemintLL8q1uDj>
+              <d6p1:Key z:Id="73">
+                <d2p1:Certification z:Id="74">Show_Off</d2p1:Certification>
+                <d2p1:Color z:Ref="62" i:nil="true" />
+                <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+                <d2p1:ImagePath z:Id="75">../ImagesSources/sources/trails/laser_wave_iii.white.png</d2p1:ImagePath>
+                <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+                <d2p1:IsPaintable>true</d2p1:IsPaintable>
+                <d2p1:Name z:Ref="49" i:nil="true" />
+                <d2p1:Price>125</d2p1:Price>
+                <d2p1:Rarity z:Ref="50" i:nil="true" />
+                <d2p1:ReleaseDate>2018-09-05T00:00:00</d2p1:ReleaseDate>
+                <d2p1:Serie z:Ref="51" i:nil="true" />
+                <d2p1:Type z:Ref="35" i:nil="true" />
+              </d6p1:Key>
+              <d6p1:Value>0</d6p1:Value>
+            </d6p1:KeyValueOfItemintLL8q1uDj>
+            <d6p1:KeyValueOfItemintLL8q1uDj>
+              <d6p1:Key z:Id="76">
+                <d2p1:Certification z:Id="77">Sweeper</d2p1:Certification>
+                <d2p1:Color z:Ref="62" i:nil="true" />
+                <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+                <d2p1:ImagePath z:Id="78">../ImagesSources/sources/wheels/zomba.png</d2p1:ImagePath>
+                <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+                <d2p1:IsPaintable>true</d2p1:IsPaintable>
+                <d2p1:Name z:Id="79">Zomba</d2p1:Name>
+                <d2p1:Price>1900</d2p1:Price>
+                <d2p1:Rarity z:Id="80">Exotic</d2p1:Rarity>
+                <d2p1:ReleaseDate>2016-12-07T00:00:00</d2p1:ReleaseDate>
+                <d2p1:Serie z:Id="81">Champion, Players Choice, Revival, Golden Egg/Pumpkin</d2p1:Serie>
+                <d2p1:Type z:Ref="27" i:nil="true" />
+              </d6p1:Key>
+              <d6p1:Value>0</d6p1:Value>
+            </d6p1:KeyValueOfItemintLL8q1uDj>
+          </d2p1:setItems>
+        </d2p1:Set>
+        <d2p1:Set z:Ref="36" i:nil="true" />
+      </d2p1:sets>
+    </d2p1:Compte>
+    <d2p1:Compte z:Id="82">
+      <d2p1:login z:Id="83">Jordan</d2p1:login>
+      <d2p1:email z:Id="84">jordan@gmail.com</d2p1:email>
+      <d2p1:image z:Id="85">../ImagesSources/testPP/wtc.jpg</d2p1:image>
+      <d2p1:password z:Id="86">12345</d2p1:password>
+      <d2p1:sets z:Id="87" z:Size="2">
+        <d2p1:Set z:Ref="57" i:nil="true" />
+        <d2p1:Set z:Ref="17" i:nil="true" />
+      </d2p1:sets>
+    </d2p1:Compte>
+    <d2p1:Compte z:Id="88">
+      <d2p1:login z:Id="89">aaaaa</d2p1:login>
+      <d2p1:email z:Id="90">aaaaaaaaaaa</d2p1:email>
+      <d2p1:image z:Id="91">file://192.168.1.99/Main/Media/Picture/discord/clément.png</d2p1:image>
+      <d2p1:password z:Id="92">aaaaa</d2p1:password>
+      <d2p1:sets z:Id="93" z:Size="0" />
+    </d2p1:Compte>
+  </comptes>
+  <items xmlns:d2p1="http://schemas.datacontract.org/2004/07/Mod%C3%A8le" z:Id="94" z:Size="50">
+    <d2p1:Item z:Id="95">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Id="96">Grey</d2p1:Color>
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="97">../ImagesSources/sources/antennas/cuckoo_clock.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="98">Cuckoo Clock</d2p1:Name>
+      <d2p1:Price>15</d2p1:Price>
+      <d2p1:Rarity z:Id="99">Uncommon</d2p1:Rarity>
+      <d2p1:ReleaseDate>2017-10-28T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="71" i:nil="true" />
+      <d2p1:Type z:Id="100">Antennas</d2p1:Type>
+    </d2p1:Item>
+    <d2p1:Item z:Id="101">
+      <d2p1:Certification z:Ref="46" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="102">../ImagesSources/sources/antennas/giant_panda.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="103">Giant Panda</d2p1:Name>
+      <d2p1:Price>15</d2p1:Price>
+      <d2p1:Rarity z:Ref="99" i:nil="true" />
+      <d2p1:ReleaseDate>2017-10-28T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="71" i:nil="true" />
+      <d2p1:Type z:Ref="100" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="104">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="105">../ImagesSources/sources/antennas/gold_nugget.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="106">Gold Nugget</d2p1:Name>
+      <d2p1:Price>17500</d2p1:Price>
+      <d2p1:Rarity z:Ref="50" i:nil="true" />
+      <d2p1:ReleaseDate>2015-05-24T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="107">Beta</d2p1:Serie>
+      <d2p1:Type z:Ref="100" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="108">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="109">../ImagesSources/sources/antennas/mage_glass_ii.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="110">Mage Glass II</d2p1:Name>
+      <d2p1:Price>60</d2p1:Price>
+      <d2p1:Rarity z:Ref="50" i:nil="true" />
+      <d2p1:ReleaseDate>2018-09-05T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="51" i:nil="true" />
+      <d2p1:Type z:Ref="100" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="111">
+      <d2p1:Certification z:Ref="77" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="112">../ImagesSources/sources/antennas/rubber_duckie.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="113">Rubber Duckie</d2p1:Name>
+      <d2p1:Price>15</d2p1:Price>
+      <d2p1:Rarity z:Ref="99" i:nil="true" />
+      <d2p1:ReleaseDate>2016-06-20T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="114">Paint &amp; Tradeup</d2p1:Serie>
+      <d2p1:Type z:Ref="100" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Ref="60" i:nil="true" />
+    <d2p1:Item z:Id="115">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="116">../ImagesSources/sources/banners/faboo.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="117">Faboo</d2p1:Name>
+      <d2p1:Price>15</d2p1:Price>
+      <d2p1:Rarity z:Ref="50" i:nil="true" />
+      <d2p1:ReleaseDate>2020-12-09T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="26" i:nil="true" />
+      <d2p1:Type z:Ref="66" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="118">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Id="119">Pink</d2p1:Color>
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="120">../ImagesSources/sources/banners/neoctane.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="121">NeOctane</d2p1:Name>
+      <d2p1:Price>125</d2p1:Price>
+      <d2p1:Rarity z:Ref="43" i:nil="true" />
+      <d2p1:ReleaseDate>2019-07-01T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="122">Radical Summer, '80s Culture</d2p1:Serie>
+      <d2p1:Type z:Ref="66" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="123">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="124">../ImagesSources/sources/banners/rl_esports.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="125">RL Esports</d2p1:Name>
+      <d2p1:Price>40</d2p1:Price>
+      <d2p1:Rarity z:Ref="50" i:nil="true" />
+      <d2p1:ReleaseDate>2018-03-10T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="126">RLCS FAN Rewards</d2p1:Serie>
+      <d2p1:Type z:Ref="66" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="127">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="128">../ImagesSources/sources/banners/tranquil_toff.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="129">Tranquil Toff</d2p1:Name>
+      <d2p1:Price>90</d2p1:Price>
+      <d2p1:Rarity z:Ref="43" i:nil="true" />
+      <d2p1:ReleaseDate>2020-06-23T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="130">Momentum</d2p1:Serie>
+      <d2p1:Type z:Ref="66" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="131">
+      <d2p1:Certification z:Id="132">GoalKeeper</d2p1:Certification>
+      <d2p1:Color z:Id="133">Forest_Green</d2p1:Color>
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="134">../ImagesSources/sources/bodies/komodo.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="135">Komodo</d2p1:Name>
+      <d2p1:Price>550</d2p1:Price>
+      <d2p1:Rarity z:Ref="80" i:nil="true" />
+      <d2p1:ReleaseDate>2020-03-11T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="136">Ignition Series</d2p1:Serie>
+      <d2p1:Type z:Ref="72" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Ref="67" i:nil="true" />
+    <d2p1:Item z:Id="137">
+      <d2p1:Certification z:Id="138">Sniper</d2p1:Certification>
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="139">../ImagesSources/sources/bodies/octane_zsr.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="140">Octane ZSR</d2p1:Name>
+      <d2p1:Price>70</d2p1:Price>
+      <d2p1:Rarity z:Ref="25" i:nil="true" />
+      <d2p1:ReleaseDate>2016-12-07T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="141">CC4</d2p1:Serie>
+      <d2p1:Type z:Ref="72" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="142">
+      <d2p1:Certification z:Ref="132" i:nil="true" />
+      <d2p1:Color z:Id="143">Crimson</d2p1:Color>
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="144">../ImagesSources/sources/bodies/samurai.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="145">Samurai</d2p1:Name>
+      <d2p1:Price>125</d2p1:Price>
+      <d2p1:Rarity z:Ref="25" i:nil="true" />
+      <d2p1:ReleaseDate>2018-04-03T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="146">Triumph</d2p1:Serie>
+      <d2p1:Type z:Ref="72" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="147">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="148">../ImagesSources/sources/bodies/takumi.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="149">Takumi</d2p1:Name>
+      <d2p1:Price>40</d2p1:Price>
+      <d2p1:Rarity z:Ref="33" i:nil="true" />
+      <d2p1:ReleaseDate>2020-09-23T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="5" i:nil="true" />
+      <d2p1:Type z:Ref="72" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="150">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="151">../ImagesSources/sources/boosts/battle_stars.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="152">Battle-Stars</d2p1:Name>
+      <d2p1:Price>15</d2p1:Price>
+      <d2p1:Rarity z:Ref="43" i:nil="true" />
+      <d2p1:ReleaseDate>2020-10-23T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="44" i:nil="true" />
+      <d2p1:Type z:Id="153">Boosts</d2p1:Type>
+    </d2p1:Item>
+    <d2p1:Item z:Id="154">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="155">../ImagesSources/sources/boosts/hearts_boost.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="156">Hearts</d2p1:Name>
+      <d2p1:Price>40</d2p1:Price>
+      <d2p1:Rarity z:Ref="33" i:nil="true" />
+      <d2p1:ReleaseDate>2016-06-20T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="114" i:nil="true" />
+      <d2p1:Type z:Ref="153" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="157">
+      <d2p1:Certification z:Ref="132" i:nil="true" />
+      <d2p1:Color z:Ref="119" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="158">../ImagesSources/sources/boosts/lightning.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="159">Lightning</d2p1:Name>
+      <d2p1:Price>200</d2p1:Price>
+      <d2p1:Rarity z:Ref="25" i:nil="true" />
+      <d2p1:ReleaseDate>2017-08-03T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="71" i:nil="true" />
+      <d2p1:Type z:Ref="153" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="160">
+      <d2p1:Certification z:Id="161">Guardian</d2p1:Certification>
+      <d2p1:Color z:Ref="22" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="162">../ImagesSources/sources/boosts/quasar.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="163">Quasar</d2p1:Name>
+      <d2p1:Price>250</d2p1:Price>
+      <d2p1:Rarity z:Ref="33" i:nil="true" />
+      <d2p1:ReleaseDate>2020-06-23T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="130" i:nil="true" />
+      <d2p1:Type z:Ref="153" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="164">
+      <d2p1:Certification z:Ref="68" i:nil="true" />
+      <d2p1:Color z:Id="165">Black</d2p1:Color>
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="166">../ImagesSources/sources/boosts/virtual_wave.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="167">Virtual Wave</d2p1:Name>
+      <d2p1:Price>200</d2p1:Price>
+      <d2p1:Rarity z:Ref="25" i:nil="true" />
+      <d2p1:ReleaseDate>2018-07-30T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="168">Zephyr</d2p1:Serie>
+      <d2p1:Type z:Ref="153" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="169">
+      <d2p1:Certification z:Ref="138" i:nil="true" />
+      <d2p1:Color z:Id="170">Cobalt</d2p1:Color>
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="171">../ImagesSources/sources/decals/dominus_nightmare_fuel.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="172">Dominus Nightmare</d2p1:Name>
+      <d2p1:Price>75</d2p1:Price>
+      <d2p1:Rarity z:Ref="50" i:nil="true" />
+      <d2p1:ReleaseDate>2019-09-28T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="173">RocketPass 4</d2p1:Serie>
+      <d2p1:Type z:Id="174">Decals</d2p1:Type>
+    </d2p1:Item>
+    <d2p1:Item z:Id="175">
+      <d2p1:Certification z:Id="176">Acrobat</d2p1:Certification>
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="177">../ImagesSources/sources/decals/endo_mg.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="178">Endo MG-88</d2p1:Name>
+      <d2p1:Price>60</d2p1:Price>
+      <d2p1:Rarity z:Ref="25" i:nil="true" />
+      <d2p1:ReleaseDate>2017-05-10T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="179">Nitro, Golden Pumpking/Gift/Egg</d2p1:Serie>
+      <d2p1:Type z:Ref="174" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="180">
+      <d2p1:Certification z:Id="181">Paragon</d2p1:Certification>
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="182">../ImagesSources/sources/decals/fire_god.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="183">Fire God</d2p1:Name>
+      <d2p1:Price>750</d2p1:Price>
+      <d2p1:Rarity z:Id="184">Black_Market</d2p1:Rarity>
+      <d2p1:ReleaseDate>2018-05-29T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="185">Too many (almost every crates)</d2p1:Serie>
+      <d2p1:Type z:Ref="174" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="186">
+      <d2p1:Certification z:Id="187">Victor</d2p1:Certification>
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="188">../ImagesSources/sources/decals/octane_distortion.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="189">Octane Distortion</d2p1:Name>
+      <d2p1:Price>60</d2p1:Price>
+      <d2p1:Rarity z:Ref="25" i:nil="true" />
+      <d2p1:ReleaseDate>2016-09-08T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="190">Champion, Golden Egg</d2p1:Serie>
+      <d2p1:Type z:Ref="174" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="191">
+      <d2p1:Certification z:Ref="21" i:nil="true" />
+      <d2p1:Color z:Id="192">Orange</d2p1:Color>
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="193">../ImagesSources/sources/decals/wet_paint.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="194">Wet Paint</d2p1:Name>
+      <d2p1:Price>400</d2p1:Price>
+      <d2p1:Rarity z:Ref="184" i:nil="true" />
+      <d2p1:ReleaseDate>2018-10-08T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="195">Elevation</d2p1:Serie>
+      <d2p1:Type z:Ref="174" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="196">
+      <d2p1:Certification z:Ref="187" i:nil="true" />
+      <d2p1:Color z:Id="197">Lime</d2p1:Color>
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="198">../ImagesSources/sources/explosions/buffy_sugo.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="199">Buffy-Sugo</d2p1:Name>
+      <d2p1:Price>950</d2p1:Price>
+      <d2p1:Rarity z:Ref="184" i:nil="true" />
+      <d2p1:ReleaseDate>2020-10-19T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="200">Season 1</d2p1:Serie>
+      <d2p1:Type z:Id="201">Explosions</d2p1:Type>
+    </d2p1:Item>
+    <d2p1:Item z:Id="202">
+      <d2p1:Certification z:Ref="132" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="203">../ImagesSources/sources/explosions/butterflies.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="204">Butterflies</d2p1:Name>
+      <d2p1:Price>1800</d2p1:Price>
+      <d2p1:Rarity z:Ref="80" i:nil="true" />
+      <d2p1:ReleaseDate>2018-03-19T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="205">Spring Fever</d2p1:Serie>
+      <d2p1:Type z:Ref="201" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="206">
+      <d2p1:Certification z:Ref="40" i:nil="true" />
+      <d2p1:Color z:Id="207">Sky_Blue</d2p1:Color>
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="208">../ImagesSources/sources/explosions/reaper.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="209">Reaper</d2p1:Name>
+      <d2p1:Price>35000</d2p1:Price>
+      <d2p1:Rarity z:Ref="25" i:nil="true" />
+      <d2p1:ReleaseDate>2017-10-16T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="210">Haunted Hallows</d2p1:Serie>
+      <d2p1:Type z:Ref="201" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="211">
+      <d2p1:Certification z:Ref="181" i:nil="true" />
+      <d2p1:Color z:Id="212">Purple</d2p1:Color>
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="213">../ImagesSources/sources/explosions/singularity.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="214">Singularity</d2p1:Name>
+      <d2p1:Price>200</d2p1:Price>
+      <d2p1:Rarity z:Ref="184" i:nil="true" />
+      <d2p1:ReleaseDate>2018-07-30T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="215">Zephyr, Elevation, Golden Egg/Gift/Punpkin</d2p1:Serie>
+      <d2p1:Type z:Ref="201" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="216">
+      <d2p1:Certification z:Ref="161" i:nil="true" />
+      <d2p1:Color z:Ref="62" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="217">../ImagesSources/sources/explosions/supernova_iii.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="218">Supernova III</d2p1:Name>
+      <d2p1:Price>450</d2p1:Price>
+      <d2p1:Rarity z:Ref="50" i:nil="true" />
+      <d2p1:ReleaseDate>2018-08-05T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="51" i:nil="true" />
+      <d2p1:Type z:Ref="201" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="219">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="220">../ImagesSources/sources/paints/furry.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="221">Furry</d2p1:Name>
+      <d2p1:Price>60</d2p1:Price>
+      <d2p1:Rarity z:Ref="25" i:nil="true" />
+      <d2p1:ReleaseDate>2017-03-22T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="222">TC Release</d2p1:Serie>
+      <d2p1:Type z:Id="223">Paints</d2p1:Type>
+    </d2p1:Item>
+    <d2p1:Item z:Id="224">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="225">../ImagesSources/sources/paints/metallic_flake.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="226">Metallic Flake</d2p1:Name>
+      <d2p1:Price>250</d2p1:Price>
+      <d2p1:Rarity z:Ref="50" i:nil="true" />
+      <d2p1:ReleaseDate>2018-08-05T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="51" i:nil="true" />
+      <d2p1:Type z:Ref="223" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="227">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="228">../ImagesSources/sources/paints/moon_rock.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="229">Moon Rock</d2p1:Name>
+      <d2p1:Price>40</d2p1:Price>
+      <d2p1:Rarity z:Ref="43" i:nil="true" />
+      <d2p1:ReleaseDate>2017-07-28T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="230">Tradeup Update 2</d2p1:Serie>
+      <d2p1:Type z:Ref="223" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="231">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="232">../ImagesSources/sources/paints/straight_line.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="233">Straight-Line</d2p1:Name>
+      <d2p1:Price>60</d2p1:Price>
+      <d2p1:Rarity z:Ref="33" i:nil="true" />
+      <d2p1:ReleaseDate>2019-02-25T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="234">Ferocity</d2p1:Serie>
+      <d2p1:Type z:Ref="223" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="235">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="236">../ImagesSources/sources/paints/toon_wood.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="237">Toon Wood</d2p1:Name>
+      <d2p1:Price>15</d2p1:Price>
+      <d2p1:Rarity z:Ref="43" i:nil="true" />
+      <d2p1:ReleaseDate>2015-07-07T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="238">Game Begin</d2p1:Serie>
+      <d2p1:Type z:Ref="223" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="239">
+      <d2p1:Certification z:Ref="77" i:nil="true" />
+      <d2p1:Color z:Ref="133" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="240">../ImagesSources/sources/toppers/fruit_hat.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="241">Fruit Hat</d2p1:Name>
+      <d2p1:Price>30</d2p1:Price>
+      <d2p1:Rarity z:Ref="99" i:nil="true" />
+      <d2p1:ReleaseDate>2016-06-20T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="114" i:nil="true" />
+      <d2p1:Type z:Id="242">Toppers</d2p1:Type>
+    </d2p1:Item>
+    <d2p1:Item z:Id="243">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="244">../ImagesSources/sources/toppers/happy_new_year.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="245">Happy New Year</d2p1:Name>
+      <d2p1:Price>125</d2p1:Price>
+      <d2p1:Rarity z:Ref="50" i:nil="true" />
+      <d2p1:ReleaseDate>2019-12-16T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="246">Frosty Fest</d2p1:Serie>
+      <d2p1:Type z:Ref="242" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="247">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="165" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="248">../ImagesSources/sources/toppers/octopus.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="249">Octopus</d2p1:Name>
+      <d2p1:Price>900</d2p1:Price>
+      <d2p1:Rarity z:Ref="43" i:nil="true" />
+      <d2p1:ReleaseDate>2017-09-28T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="230" i:nil="true" />
+      <d2p1:Type z:Ref="242" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="250">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="251">../ImagesSources/sources/toppers/robo_visor.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="252">ROBO-Visor</d2p1:Name>
+      <d2p1:Price>15</d2p1:Price>
+      <d2p1:Rarity z:Ref="43" i:nil="true" />
+      <d2p1:ReleaseDate>2016-06-20T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="114" i:nil="true" />
+      <d2p1:Type z:Ref="242" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="253">
+      <d2p1:Certification z:Ref="61" i:nil="true" />
+      <d2p1:Color z:Ref="133" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="254">../ImagesSources/sources/toppers/wildcat_ears.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>false</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="255">Wildcat Ears</d2p1:Name>
+      <d2p1:Price>250</d2p1:Price>
+      <d2p1:Rarity z:Ref="43" i:nil="true" />
+      <d2p1:ReleaseDate>2016-06-20T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="114" i:nil="true" />
+      <d2p1:Type z:Ref="242" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Ref="28" i:nil="true" />
+    <d2p1:Item z:Ref="45" i:nil="true" />
+    <d2p1:Item z:Ref="73" i:nil="true" />
+    <d2p1:Item z:Id="256">
+      <d2p1:Certification z:Id="257">Striker</d2p1:Certification>
+      <d2p1:Color z:Ref="212" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="258">../ImagesSources/sources/trails/lightspeed.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="259">Lightspeed</d2p1:Name>
+      <d2p1:Price>125</d2p1:Price>
+      <d2p1:Rarity z:Ref="33" i:nil="true" />
+      <d2p1:ReleaseDate>2017-07-05T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="260">ODC</d2p1:Serie>
+      <d2p1:Type z:Ref="35" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="261">
+      <d2p1:Certification z:Id="262">Aviator</d2p1:Certification>
+      <d2p1:Color z:Ref="30" i:nil="true" />
+      <d2p1:HasBlueprint>true</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="263">../ImagesSources/sources/trails/luminous.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>false</d2p1:IsPaintable>
+      <d2p1:Name z:Id="264">Luminous</d2p1:Name>
+      <d2p1:Price>60</d2p1:Price>
+      <d2p1:Rarity z:Ref="33" i:nil="true" />
+      <d2p1:ReleaseDate>2018-02-07T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="265">Visitor</d2p1:Serie>
+      <d2p1:Type z:Ref="35" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Ref="39" i:nil="true" />
+    <d2p1:Item z:Id="266">
+      <d2p1:Certification z:Ref="68" i:nil="true" />
+      <d2p1:Color z:Ref="197" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="267">../ImagesSources/sources/wheels/stern.uncommon.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Id="268">Stern</d2p1:Name>
+      <d2p1:Price>75</d2p1:Price>
+      <d2p1:Rarity z:Ref="99" i:nil="true" />
+      <d2p1:ReleaseDate>2016-06-20T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Ref="114" i:nil="true" />
+      <d2p1:Type z:Ref="27" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Id="269">
+      <d2p1:Certification z:Ref="161" i:nil="true" />
+      <d2p1:Color z:Ref="96" i:nil="true" />
+      <d2p1:HasBlueprint>false</d2p1:HasBlueprint>
+      <d2p1:ImagePath z:Id="270">../ImagesSources/sources/wheels/stern.very_rare.png</d2p1:ImagePath>
+      <d2p1:IsCertifiable>true</d2p1:IsCertifiable>
+      <d2p1:IsPaintable>true</d2p1:IsPaintable>
+      <d2p1:Name z:Ref="268" i:nil="true" />
+      <d2p1:Price>125</d2p1:Price>
+      <d2p1:Rarity z:Ref="33" i:nil="true" />
+      <d2p1:ReleaseDate>0666-06-06T00:00:00</d2p1:ReleaseDate>
+      <d2p1:Serie z:Id="271">Unknow</d2p1:Serie>
+      <d2p1:Type z:Ref="27" i:nil="true" />
+    </d2p1:Item>
+    <d2p1:Item z:Ref="20" i:nil="true" />
+    <d2p1:Item z:Ref="76" i:nil="true" />
+  </items>
+  <sets xmlns:d2p1="http://schemas.datacontract.org/2004/07/Mod%C3%A8le" z:Id="272" z:Size="3">
+    <d2p1:Set z:Ref="17" i:nil="true" />
+    <d2p1:Set z:Ref="57" i:nil="true" />
+    <d2p1:Set z:Ref="36" i:nil="true" />
+  </sets>
+</DataToPersist>

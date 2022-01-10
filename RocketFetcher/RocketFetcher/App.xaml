@@ -1,0 +1,172 @@
+﻿<Application x:Class="RocketFetcher.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:RocketFetcher"
+             StartupUri="MainWindow.xaml">
+
+    <Application.Resources>
+
+        <!--Ressources statiques :-->   
+        <SolidColorBrush Color="#FF063FB8" x:Key="couleurTitre"/>
+        <SolidColorBrush Color="black" x:Key="couleurBorderMenu"/>
+        <SolidColorBrush Color="white" x:Key="couleurBorderSearch"/>
+        <SolidColorBrush Color="white" x:Key="couleurBorderDetails"/>
+
+
+        <!--Styles des boutons :-->
+        
+        <Style TargetType="Button" 
+               x:Key="bouttonType">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Foreground" Value="white"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    
+        <Style TargetType="Button" 
+               x:Key="noBC">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalAlignment}"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Margin" Value="0"/>
+                    <Setter Property="FontSize" Value="20"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="Button" 
+               x:Key="noBCsimple">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalAlignment}"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        
+        <!--Styles de la TextBox :-->
+
+        <Style TargetType="TextBox" x:Key="textBoxChampTexte">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+        
+        
+        <!--Styles des TextBlock :-->
+
+        <Style TargetType="TextBlock" x:Key="textBlockBasique">
+            <Setter Property="Foreground" Value="white"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="22"/>
+        </Style>
+
+        <Style TargetType="TextBlock" 
+               x:Key="BasiquePlus">
+            <Setter Property="Foreground" Value="white"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="FontSize" Value="20"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="textBlockDroite">
+            <Setter Property="Foreground" Value="white"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Width" Value="150"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="itemSpec">
+            <Setter Property="Foreground" Value="white"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Margin" Value="25,25"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="itemSpecData">
+            <Setter Property="Foreground" Value="white"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Margin" Value="25,25"/>
+        </Style>
+
+        
+        <!--Style de la PasswordBox :-->
+
+        <Style TargetType="PasswordBox" x:Key="StylePassword">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+
+
+        <!--Style de la ListBoxItem :-->
+        
+        <!--MERCI INTERNET !!-->
+        <Style x:Key="ListBoxItemStyleTransparentSelect" TargetType="ListBoxItem">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Grid Background="{TemplateBinding Background}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0" To=".35" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="fillColor"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0" To=".55" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="contentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="SelectionStates">
+                                    <VisualState x:Name="Unselected"/>
+                                    <VisualState x:Name="Selected"/>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused"/>
+                                    <VisualState x:Name="Unfocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Rectangle x:Name="fillColor" IsHitTestVisible="False" Opacity="0" RadiusY="1" RadiusX="1"/>
+                            <Rectangle x:Name="fillColor2" IsHitTestVisible="False" Opacity="0" RadiusY="1" RadiusX="1"/>
+                            <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}"/>
+                            <Rectangle x:Name="FocusVisualElement" RadiusY="1" RadiusX="1" StrokeThickness="1" Visibility="Collapsed"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Application.Resources>
+</Application>
